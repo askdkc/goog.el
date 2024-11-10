@@ -1,0 +1,33 @@
+* Google Search Short Cut for Emacs
+
+** Introduction
+Goog.el is a simple Emacs package that provides a shortcut to perform Google searches directly from your Emacs editor. It's lightweight and designed to streamline searching by leveraging the power of Emacs commands.
+
+** Features
+- Search Google using a keyword or phrase.
+- Search by selecting a region or from the current line if no region is selected.
+
+** Installation
+1. Ensure you have Emacs 28 or newer as Goog.el requires Emacs version 28.0 or later.
+2. Download the Goog.el package from the [[http://github.com/askdkc/goog.el][GitHub repository]].
+3. Place it in your Emacs load path.
+
+** Usage
+1. Add the following to your =init.el= file:
+   #+begin_src emacs-lisp
+   (require 'goog)
+   (global-set-key (kbd "C-c g") 'google)
+   #+end_src
+
+2. Use =M-x search-google= to prompt for a search term and perform a Google search.
+
+3. Use =C-c g= to search Google with the current line or the selected region.
+
+** License
+Goog.el is licensed under the GNU General Public License v3.0. You are free to use, modify, and distribute it under the terms stated in the license.
+
+** Contributing
+If you encounter issues or have feature requests, please submit them through this [[http://github.com/askdkc/goog.el][GitHub repository]].
+
+** Acknowledgments
+Inspired by configurations shared on [[https://www.emacswiki.org/emacs/JorgenSchaefersEmacsConfig][EmacsWiki]].
