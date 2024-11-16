@@ -6,7 +6,7 @@
 ;; Maintainer: dkc <askdkc@gmail.com>
 ;; Created: Nov 3, 2024
 ;; Modified: Nov 3, 2024
-;; Version: 0.0.1
+;; Version: 0.0.2
 ;; Homepage: http://github.com/askdkc/goog.el
 ;; Package-Requires: ((emacs "28.0"))
 ;;
