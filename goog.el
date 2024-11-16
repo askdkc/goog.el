@@ -47,7 +47,7 @@
 		 (line-end-position))))
       (funcall fn line))))
 
-(defun google ()
+(defun goog ()
   "Search Google with words or sentences from the current line.
 Set up shortcut key like (keymap-global-set \"C-c g\" `google') in your
 init.el or something."
