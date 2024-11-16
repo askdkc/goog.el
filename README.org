@@ -16,7 +16,7 @@ Goog.el is a simple Emacs package that provides a shortcut to perform Google sea
 1. Add the following to your =init.el= file:
    #+begin_src emacs-lisp
    (require 'goog)
-   (global-set-key (kbd "C-c g") 'google)
+   (global-set-key (kbd "C-c g") 'goog)
    #+end_src
 
 2. Use =M-x search-google= to prompt for a search term and perform a Google search.
