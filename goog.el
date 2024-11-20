@@ -41,11 +41,8 @@
     (let ((selected-text (buffer-substring-no-properties
                           (region-beginning)
                           (region-end))))
-      (funcall fn selected-text))
-    (let ((line (buffer-substring-no-properties
-		 (line-beginning-position)
-		 (line-end-position))))
-      (funcall fn line))))
+      (funcall fn (url-encode-url selected-text)))
+    (funcall fn (url-encode-url (thing-at-point 'line)))))
 
 (defun goog ()
   "Search Google with words or sentences from the current line.
